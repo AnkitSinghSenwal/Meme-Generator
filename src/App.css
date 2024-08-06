@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0; /* Added a background color for better visibility */
-
+  padding: 0.5% 3%;
 }
 
 .page{
@@ -132,6 +132,17 @@ main {
 
 
 @media screen and (max-width: 460px){
+
+  body{
+    padding: 0;
+  }
+
+  .page{
+    margin-top: 0;
+    border: 5px solid #000;
+    border-radius: 5px;
+  }
+
   .header {
     display: grid;
     grid-template: auto auto / 1fr 2fr;
@@ -146,6 +157,7 @@ main {
     height: 50px;
     margin-right: 6px;
   }
+
   .header--title {
     font-size: 1.25rem;
     margin-left: auto;
@@ -156,7 +168,6 @@ main {
     font-weight: 500;
   }
 
-
   .form {
     display: flex;
     flex-direction: column;
@@ -164,13 +175,29 @@ main {
     align-items: center;
     gap: 5px;
     margin-bottom: 10px;
-  }
+   }
+
   .form--button {
     width: 100%;
+  }
+
+  .meme--image {
+    border: 2px solid black;
+    border-radius: 2px;
   }
 }
 
 @media screen and (max-width: 300px) {
+  
+  body{
+    padding: 0;
+  }
+  .page{
+    margin-top: 0;
+    border: 3px solid #000;
+    border-radius: 5px;
+  }
+  
   .header {
     display: flex;
     flex-direction: column;
@@ -183,5 +210,9 @@ main {
   .header--project {
     font-size: 0.55rem;
     font-weight: 500;
+  }
+  .meme--image {
+    border: 2px solid black;
+    border-radius: 2px;
   }
 }
